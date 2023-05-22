@@ -1,10 +1,12 @@
 b {
-  color: white;
-  padding-top: 20px;
+  
+  
 }
 
 .header {
+  color: white;
   background-color: #3699ff;
   width: 100%;
+  padding: 20px 0 15px 20px;
 }
 
