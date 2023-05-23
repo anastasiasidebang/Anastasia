@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {FaYoutube} from 'react-icons';
 
 const GetRandomFood = async () => {
   const url = "https://www.themealdb.com/api/json/v1/1/random.php";
@@ -43,7 +44,7 @@ const FoodItem = ({ food }) => {
           target="_blank"
         >
           <button type="submit">
-            <img src="https://img.icons8.com/?size=512&id=37326&format=png" />
+            <FaYoutube />
           </button>
         </form>
         <a
