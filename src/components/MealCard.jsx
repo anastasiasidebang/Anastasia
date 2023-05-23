@@ -43,7 +43,7 @@ const FoodItem = ({ food }) => {
           target="_blank"
         >
           <button type="submit">
-            <img src="https://img.icons8.com/?size=512&id=37326&format=pnghttps://img.icons8.com/?size=512&id=37326&format=png" />
+            <img src="https://img.icons8.com/?size=512&id=37326&format=png" />
           </button>
         </form>
         <a
