@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {FaYoutube, BsBoxArrowInRight} from 'react-icons';
+import "./App.css";
 
 const GetRandomFood = async () => {
   const url = "https://www.themealdb.com/api/json/v1/1/random.php";
