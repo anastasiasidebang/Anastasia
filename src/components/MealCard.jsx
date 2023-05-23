@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {FaYoutube} from 'react-icons';
+import {FaYoutube, BsBoxArrowInRight} from 'react-icons';
 
 const GetRandomFood = async () => {
   const url = "https://www.themealdb.com/api/json/v1/1/random.php";
@@ -37,24 +37,12 @@ const FoodItem = ({ food }) => {
         <h3 className="card-title">{strMeal}</h3>
         <p className="card-category">{strCategory}</p>
         <p className="card-text">{strInstructions}</p>
-        <form
-          action={strYoutube}
-          className="youtube"
-          method="get"
-          target="_blank"
-        >
-          <button type="submit">
-            <FaYoutube />
-          </button>
+        <form action={strYoutube} className="youtube" method="get" target="_blank">
+          <button type="submit"><FaYoutube /></button>
         </form>
-        <a
-          href={strSource}
-          className="btn btn-primary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Recipe
-        </a>
+        <form action={strSource} className="source" method="get" target="_blank">
+          <button type="submit"><BsBoxArrowInRight />Source</button>
+        </form>
       </div>
     </div>
   );
