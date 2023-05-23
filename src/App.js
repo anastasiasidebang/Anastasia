@@ -1,15 +1,17 @@
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
 import Header from "./components/Header";
+import MealCard from "./components/MealCard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <Header />
-      </header>
-      <body>
-        
-      </body>
+      </div>
+      <div>
+        <MealCard />
+      </div>
     </div>
   );
 }
