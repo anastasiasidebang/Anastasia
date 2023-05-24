@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {FaYoutube, BsBoxArrowInRight} from 'react-icons';
-import "./App.css";
+import "../App.css";
 
 const GetRandomFood = async () => {
   const url = "https://www.themealdb.com/api/json/v1/1/random.php";
@@ -32,18 +31,26 @@ const FoodItem = ({ food }) => {
   } = food;
 
   return (
-    <div className="card">
-      <img src={strMealThumb} alt={strMeal} className="card-img-top" />
-      <div className="card-body">
-        <h3 className="card-title">{strMeal}</h3>
-        <p className="card-category">{strCategory}</p>
-        <p className="card-text">{strInstructions}</p>
-        <form action={strYoutube} className="youtube" method="get" target="_blank">
-          <button type="submit"><FaYoutube /></button>
-        </form>
-        <form action={strSource} className="source" method="get" target="_blank">
-          <button type="submit"><BsBoxArrowInRight />Source</button>
-        </form>
+    <div className="container">
+      <div className="card">
+        <img src={strMealThumb} className="image" />
+        <div className="card-body">
+          <h3 className="title">{strMeal}</h3>
+          <p className="category">{strCategory}</p>
+          <span className="instructions">{strInstructions}</span>
+          <div className="buttons">
+            <form action={strYoutube} method="get" target="_blank">
+              <button type="submit" className="youtube">
+                Youtube
+              </button>
+            </form>
+            <form action={strSource} method="get" target="_blank">
+              <button type="submit" className="source">
+                Source
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
