@@ -31,7 +31,7 @@ const FoodItem = ({ food }) => {
   } = food;
 
   return (
-    <div className="container">
+    <div>
       <div className="card">
         <img src={strMealThumb} className="image" />
         <div className="card-body">
@@ -71,7 +71,7 @@ function RandomFoods() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       {foods.map((food, index) => (
         <FoodItem key={index} food={food} />
       ))}
